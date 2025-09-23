@@ -5,9 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:static": "next build && next export",
     "start": "next start",
-    "lint": "next lint",
-    "generate:rss": "node src/scripts/gen-rss.js"
+    "lint": "next lint"
   },
   "dependencies": {
     "@icons-pack/react-simple-icons": "^9.5.0",
