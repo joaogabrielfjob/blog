@@ -75,6 +75,27 @@ const projects: Project[] = [
       </div>
     ),
   },
+  {
+    name: "NOI",
+    description:
+      "IntelliJ's optimize import feature for javascript projects",
+    url: "https://www.npmjs.com/package/npm-organize-imports",
+    imageUrl: "/projects/npm.png",
+    githubUrl: "https://github.com/joaogabrielfjob/npm-organize-imports",
+    technologies: (
+      <div className="flex items-center gap-x-3">
+        <span className="rounded-full bg-[#00D8FE] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-inherit ring-1 dark:ring-zinc-500 ring-zinc-600">
+          JavaScript
+        </span>
+        <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-inherit ring-1 dark:ring-zinc-500 ring-zinc-600">
+          NPM
+        </span>
+        <span className="rounded-full bg-black px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 ring-1 dark:ring-zinc-500 ring-zinc-600">
+          Glob
+        </span>
+      </div>
+    ),
+  }
 ];
 
 function ProjectCard({
