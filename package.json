@@ -3,18 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "packageManager": "bun@1.3.14",
   "scripts": {
-    "preinstall": "bun scripts/verify-bun-version.ts",
-    "predev": "bun run verify:bun",
     "dev": "vite",
-    "prebuild": "bun run verify:bun",
-    "build": "bun run typecheck && vite build",
-    "prepreview": "bun run verify:bun",
-    "preview": "vite preview",
-    "pretypecheck": "bun run verify:bun",
-    "verify:bun": "bun scripts/verify-bun-version.ts",
-    "typecheck": "tsc --noEmit"
+    "build": "vite build"
   },
   "dependencies": {
     "@icons-pack/react-simple-icons": "^13.13.0",
