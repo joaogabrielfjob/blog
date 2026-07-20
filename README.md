@@ -15,4 +15,4 @@ bun run dev
 bun run build
 ```
 
-The production files are written to `dist/`. Cloudflare Pages preview and production environments use `bun ci && bun run build` as the build command and publish `dist`. The generated `_redirects` file enables direct visits to client-side routes.
+The production files are written to `dist/`. Cloudflare Pages preview and production environments use `bun install --frozen-lockfile && bun run build` as the build command and publish `dist`. The generated `_redirects` file enables direct visits to client-side routes.
