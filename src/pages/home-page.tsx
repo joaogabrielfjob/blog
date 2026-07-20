@@ -1,6 +1,32 @@
-import { Download, Send } from "lucide-react";
 import { ContactLinks } from "../components/contact-links";
 
 export function HomePage() {
-  return <div className="flex flex-col gap-6"><p className="text-sm">-</p><ContactLinks /><div className="flex justify-center gap-6 max-sm:flex-col-reverse sm:justify-between"><div className="flex flex-col justify-center gap-4 max-sm:items-center"><div className="group -m-8 flex select-all items-center gap-3 p-8">joao.gabrielfjob@gmail.com <a href="mailto:joao.gabrielfjob@gmail.com" className="text-zinc-800 dark:text-zinc-200" aria-label="Email João Job"><Send strokeWidth={1.4} className="size-4" /></a></div><span className="-mt-2 inline-flex w-fit items-center gap-1 rounded-full bg-green-100 px-2 py-0.5 text-sm text-green-600 ring-1 ring-green-500 dark:bg-transparent dark:text-emerald-500 dark:ring-emerald-500"><span className="size-2 animate-pulse rounded-full bg-green-500 dark:bg-emerald-500" />Online</span></div><div className="flex flex-col gap-2"><a href="/joao-job-cv.pdf" download="joao-job-cv.pdf" className="flex flex-row items-center justify-center gap-3 rounded bg-sky-300 p-4 text-sky-800 ring-1 ring-sky-500 transition-transform sm:hover:bg-sky-400 dark:bg-inherit dark:text-sky-500 dark:ring-sky-500 sm:dark:hover:bg-zinc-800"><span className="text-nowrap">Download my CV</span><Download strokeWidth={1.4} className="size-5 max-sm:hidden" /></a></div></div></div>;
+  return (
+    <div className="flex flex-col gap-6">
+      <section className="space-y-4">
+        <p>Hi, I&apos;m a backend developer who enjoys turning ideas into reliable, well-structured software.</p>
+        <p>My professional background is mainly in Java, where I&apos;ve worked with backend development, APIs, databases, and the challenges involved in building and maintaining real-world applications. More recently, I&apos;ve been expanding my focus into Go and TypeScript, exploring their ecosystems and using them to build modern, efficient web services.</p>
+        <p>Outside of work, I enjoy creating personal projects that help me experiment with new technologies, improve my development workflow, and solve problems that interest me. I see these projects as a place to learn, make mistakes, test new approaches, and become a better engineer.</p>
+        <p>My goal is to continue growing as a software engineer, with a strong focus on backend architecture, performance, clean code, and scalable systems. I&apos;m always curious about how things work and constantly looking for opportunities to learn, build, and improve.</p>
+      </section>
+      <ContactLinks />
+      <div className="flex justify-center gap-6 max-sm:flex-col-reverse sm:justify-between">
+        <div className="flex flex-col justify-center gap-4 max-sm:items-center">
+          <a
+            href="mailto:joao.gabrielfjob@gmail.com"
+            className="-m-8 p-8 text-zinc-800 underline decoration-sky-500 underline-offset-4 dark:text-zinc-200 dark:decoration-sky-600"
+          >
+            joao.gabrielfjob@gmail.com
+          </a>
+        </div>
+        <a
+          href="/joao-job-cv.pdf"
+          download="joao-job-cv.pdf"
+          className="-m-8 p-8 text-zinc-800 underline decoration-sky-500 underline-offset-4 dark:text-zinc-200 dark:decoration-sky-600"
+        >
+          Download my CV
+        </a>
+      </div>
+    </div>
+  );
 }
